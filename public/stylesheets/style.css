@@ -1,8 +1,14 @@
 body {
-  /* padding: 50px; */
+  padding: 0px;
+  margin: 0px;
   background-color: #ffffff;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
+
+.container {
+  margin: auto 10%;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -12,6 +18,16 @@ nav {
   align-items: center;
   padding: 0 2rem;
   margin: 0px 4rem 10px 4rem;
+  transition: top 500ms ease-in-out;
+}
+
+nav.scroll-up,
+nav:focus-within {
+  top: 0;
+}
+
+nav.scroll-down {
+  top: -100%;
 }
 
 nav input {
@@ -27,11 +43,17 @@ nav button {
   font-size: large;
   width: 110px;
   border-radius: 1px 5px 5px 1px;
-  background-color: rgb(98, 143, 240);
+  background-color: #2e93ee;
   color: white;
+  border: none;
 }
 nav button:hover {
   background-color: rgb(88, 128, 214);
+}
+
+.links {
+  display: flex;
+  margin: 0 -1em;
 }
 
 .links a {
@@ -39,6 +61,13 @@ nav button:hover {
   text-decoration: none;
   margin-right: 1.25rem;
   font-weight: bold;
+  display: inline-block;
+  /* margin: 0 1em; */
+}
+
+#sign-in:hover {
+  text-decoration: underline;
+  z-index: 20;
 }
 
 .ca-com-net {
@@ -59,4 +88,53 @@ nav button:hover {
 
 .ca-com-net a:hover {
   text-decoration: underline;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content-section {
+  text-align: center;
+}
+
+.content-section button {
+  padding: 0.75rem 0;
+  font-size: large;
+  width: 100%;
+  border-radius: 5px 5px;
+  background-color: #2e93ee;
+  color: white;
+  border: none;
+}
+
+.content-section button:hover {
+  background-color: rgb(88, 128, 214);
+}
+
+.card {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.card:hover .hide {
+  width: 80%;
+  font-weight: bold;
+  display: block;
+  color: black;
+  background-color: #ffcf00;
+  border-radius: 5px;
+  padding: 0.25rem 0;
+  margin: 1em auto;
+}
+
+.card img {
+  width: 108px;
+  height: 90px;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>WHC Sign In</title>
+    <meta name="description" content="Web Hosting Sign In" />
+    <link rel="stylesheet" href="stylesheets/global.css" />
+    <link rel="stylesheet" href="stylesheets/signin.css" />
+    <link rel="stylesheet" href="stylesheets/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <!-- <script src="js/scripts.js"></script> -->
+  </head>
+  <body>
+    <div>
+      <div class="signin-card">
+        <img src="images/logoIcon.PNG" alt="WHC" />
+        <h2>Sign in to WHC</h2>
+        <form>
+          <div class="input-section-1">
+            <i class="fas fa-user"></i>
+            <input
+              style="border-bottom: none"
+              required
+              name="email"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <br />
+            <i class="fas fa-lock"></i>
+            <input
+              required
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="input-section-2">
+            <input
+              style="margin-top: 1rem"
+              type="checkbox"
+              name="remember"
+              id="remember"
+            />
+            <span style="margin-top: 1rem">Remember Me</span>
+            <br />
+            <a href="/">Forgot Password?</a>
+          </div>
+          <button style="margin-top: 1rem" type="submit">Sign In</button>
+        </form>
+      </div>
+      <div class="signup-section">
+        <span>NEW TO WHC?</span>
+        <a href="/signup"
+          ><h3 style="display: inline-block; margin: 0">Sign Up</h3></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

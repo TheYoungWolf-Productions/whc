@@ -3,24 +3,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WHC</title>
     <meta name="description" content="A replicate of WHC" />
+    <link rel="stylesheet" href="stylesheets/global.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <!-- <script src="js/scripts.js"></script> -->
+    <script src="javascripts/nav.js"></script>
   </head>
   <body>
     <nav style="margin-top: 2.5rem">
-      <div class="logo">
+      <a class="logo" href="/">
         <img src="images/Logo.PNG" alt="WebHosting Canada" />
-      </div>
+      </a>
       <div class="links">
-        <a href="/">Hosting & servers</a>
-        <a href="/">Domain names</a>
+        <a href="/">Hosting</a>
+        <a href="/">Domains</a>
         <a href="/">Websites</a>
         <a href="/">Email</a>
-        <a href="/">Online Marketing</a>
-        <a href="/">Security & SSL</a>
-        <a style="color: red" href="/">Hot Deals</a>
+        <a href="/">Marketing</a>
+        <a href="/">Security</a>
+        <a id="sign-in" style="color: #2e93ee" href="/signin">Sign In</a>
       </div>
     </nav>
     <nav style="justify-content: flex-start; align-items: center">
@@ -41,6 +43,44 @@
         </div>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <div stlye="margin: 0px; padding: 0px" class="row hero-section">
+        <div stlye="margin: 0px; padding: 0px" class="col-12">
+          <img src="images/jumbotron.PNG" alt="Hero-Section" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row content-section">
+          <div class="card col-m-6 col-3">
+            <img src="images/wh.PNG" alt="WH" />
+            <h3>Web Hosting</h3>
+            <p>Get fast and unlimited web hosting for your site</p>
+            <button type="button" href="">Get Hosting</button>
+            <p class="hide">SAVE UPTO 50% OFF</p>
+          </div>
+          <div class="card col-m-6 col-3">
+            <img src="images/cs.PNG" alt="CS" />
+            <h3>VPS Hosting</h3>
+            <p>Full root access in a fully scalable hosting environment</p>
+            <button type="button" href="">Compare Clouds</button>
+            <p class="hide">SAVE UPTO 67% OFF</p>
+          </div>
+          <div class="card col-m-6 col-3">
+            <img src="images/ds.PNG" alt="DS" />
+            <h3>Dedicated Servers</h3>
+            <p>The ultimate in performance. Get total server control</p>
+            <button type="button" href="">View Servers</button>
+            <p class="hide">SAVE UPTO 26% OFF</p>
+          </div>
+          <div class="card col-m-6 col-3">
+            <img src="images/wp.PNG" alt="WP" />
+            <h3>WordPress</h3>
+            <p>2.5x the speed, beefed up security, and free migrations</p>
+            <button type="button" href="">Get WordPress</button>
+            <p class="hide">SAVE UPTO 40% OFF</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

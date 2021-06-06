@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>WHC Sign Up</title>
+    <meta name="description" content="Web Hosting Sign In" />
+    <link rel="stylesheet" href="stylesheets/global.css" />
+    <link rel="stylesheet" href="stylesheets/signup.css" />
+    <link rel="stylesheet" href="stylesheets/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <!-- <script src="js/scripts.js"></script> -->
+  </head>
+  <body>
+    <div>
+      <div class="signup-card">
+        <img src="images/logoIcon.PNG" alt="WHC" />
+        <h2 style="margin-bottom: 0">Create an Account</h2>
+        <form>
+          <div class="row info">
+            <h3 class="col-m-12 col-12 sub-division">Personal information</h3>
+            <div class="col-m-12 col-6">
+              <i class="fas fa-user"></i>
+              <input
+                required
+                name="firstName"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col-m-12 col-6">
+              <i class="fas fa-user"></i>
+              <input
+                required
+                name="lastName"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <br />
+            <div class="col-m-12 col-6">
+              <i class="fas fa-envelope"></i>
+              <input
+                required
+                name="email"
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="col-m-12 col-6">
+              <i class="fas fa-phone"></i>
+              <input
+                required
+                name="phoneNumber"
+                type="text"
+                placeholder="Phone Number"
+              />
+            </div>
+          </div>
+          <div class="row info">
+            <h3 class="col-m-12 col-12 sub-division">Billing information</h3>
+            <div class="col-m-12 col-12">
+              <i class="fas fa-building"></i>
+              <input
+                name="companyName"
+                type="text"
+                placeholder="Company Name (Optional)"
+              />
+            </div>
+            <div class="col-m-12 col-12">
+              <i class="fas fa-map-marker-alt"></i>
+              <input
+                required
+                name="address1"
+                type="text"
+                placeholder="Address line 1"
+              />
+            </div>
+            <br />
+            <div class="col-m-12 col-12">
+              <i class="fas fa-map-marker-alt"></i>
+              <input
+                name="address2"
+                type="email"
+                placeholder="Address line 2"
+              />
+            </div>
+            <div style="text-align: right" class="col-m-12 col-4">
+              <i class="fas fa-location-arrow"></i>
+              <input required name="city" type="text" placeholder="City" />
+            </div>
+            <div style="text-align: center" class="col-m-12 col-4">
+              <i class="fas fa-map-pin"></i>
+              <input
+                required
+                name="street"
+                type="text"
+                placeholder="Street number"
+              />
+            </div>
+            <div style="text-align: left" class="col-m-12 col-4">
+              <i class="fas fa-mail-bulk"></i>
+              <input
+                required
+                name="zipCode"
+                type="text"
+                placeholder="Zip Code"
+              />
+            </div>
+            <div class="col-m-12 col-12">
+              <i class="fas fa-map-marked-alt"></i>
+              <input required name="country" type="text" placeholder="Canada" />
+            </div>
+            <div class="col-m-12 col-12">
+              <i class="fas fa-fingerprint"></i>
+              <input name="taxId" type="text" placeholder="Tax ID (Optional)" />
+            </div>
+          </div>
+          <div class="row info">
+            <h3 class="col-m-12 col-12 sub-division">Account Security</h3>
+            <div class="col-m-12 col-6">
+              <i class="fas fa-lock"></i>
+              <input
+                required
+                name="password"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="col-m-12 col-6">
+              <i class="fas fa-lock"></i>
+              <input
+                required
+                name="confirmPassword"
+                type="password"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </div>
+
+          <div class="row info">
+            <h3 class="col-m-12 col-12 sub-division-danger">
+              <span><i class="fas fa-exclamation-triangle"></i></span> Terms of
+              service
+            </h3>
+            <div
+              style="
+                border: 1px solid #af9996;
+                border-top: none;
+                border-radius: 0 0 3px 3px;
+              "
+              class="col-m-12 col-12"
+            >
+              <input
+                style="margin-top: 1rem; width: auto"
+                type="checkbox"
+                name="consent"
+                id="consent"
+              />
+              <span style="margin-top: 1rem"
+                >By clicking on the submit entry button and submitting this form
+                you will be indicating your consent to WHC communications by
+                email and our privacy policy.</span
+              >
+            </div>
+          </div>
+          <button style="margin-top: 1rem" type="submit">Register</button>
+        </form>
+      </div>
+      <div class="signin-section">
+        <span>ALREADY A MEMBER?</span>
+        <a href="/signin"
+          ><h3 style="display: inline-block; margin: 0">Sign In</h3></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

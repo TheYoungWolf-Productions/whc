@@ -1,0 +1,84 @@
+body {
+  background-image: linear-gradient(to right, #2e93ee, #ffcf00);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  /* padding: 0 2rem; */
+  /* margin: 0px 4rem 10px 4rem; */
+}
+/* 
+body > div {
+    display:flex
+} */
+
+.signin-card {
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.signin-card .input-section-1 {
+  margin: 0px 40px;
+}
+
+.signin-card .input-section-1 input {
+  margin: 0px 5px;
+  width: 300px;
+  padding: 1rem 2rem 1rem 15px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.signin-card .input-section-2 {
+  margin: 0px 0px 0px 35%;
+}
+
+.signup-section {
+  width: 100%;
+  background-color: #ecebe7;
+  padding: 20px 40px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.signup-section a {
+  text-decoration: none;
+  color: #af9996;
+}
+
+.signup-section a:hover {
+  color: #2e93ee;
+}
+
+.input-section-2 a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #af9996;
+  padding-left: 10px;
+}
+
+.input-section-2 a:hover {
+  color: #2e93ee;
+}
+
+form button {
+  width: 100%;
+  background-color: #2e93ee;
+  color: #ffcf00;
+  font-size: large;
+  padding: 10px 0px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(88, 128, 214);
+}
