@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: #f5f6f8;
+  /* ecebe7 */
   /* font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
 
@@ -57,6 +58,17 @@ nav button:hover {
   margin: 0 -1em;
 }
 
+.small-case {
+  font-size: small;
+  color: rgb(78, 75, 78);
+}
+
+.price {
+  color: rgb(136, 48, 48);
+  font-size: xx-large;
+  margin-top: 2px;
+}
+
 .links a {
   color: #000000;
   text-decoration: none;
@@ -64,10 +76,6 @@ nav button:hover {
   font-weight: bold;
   display: inline-block;
   /* margin: 0 1em; */
-}
-
-.links a:hover {
-  color: #2e93ee;
 }
 
 #sign-in:hover {
@@ -103,7 +111,6 @@ nav button:hover {
 
 .content-section {
   text-align: center;
-  margin: 15px 0px;
 }
 
 .content-section button {
@@ -122,6 +129,7 @@ nav button:hover {
 
 .card {
   text-align: center;
+  /* margin: 15px 5px; */
   background-color: white;
 }
 

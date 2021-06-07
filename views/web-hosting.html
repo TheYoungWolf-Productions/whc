@@ -7,9 +7,96 @@
     <title>WHC</title>
     <meta name="description" content="A replicate of WHC" />
     <link rel="stylesheet" href="stylesheets/global.css" />
-    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/web-hosting.css" />
     <link rel="stylesheet" href="stylesheets/css/all.min.css" />
-    <!-- <script src="javascripts/nav.js"></script> -->
+    <script type="module">
+      import plans from "./javascripts/modules/plans.js";
+      document.getElementsByClassName("content-section")[0].innerHTML =
+        "<div class='card col-m-6 col-3'><img src='" +
+        plans[0].icon +
+        "' alt='HP' /><h2>" +
+        plans[0].title +
+        "</h2><p>" +
+        plans[0].desc +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[0].features[0] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[0].features[1] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[0].features[2] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[0].features[3] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[0].features[4] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[0].features[5] +
+        "</p><p class='small-case'>As low as</p><h3 class='price'>C$" +
+        plans[0].price +
+        "/mo</h3><button type='button'>Add to cart</button></div>" +
+        "<div class='card col-m-6 col-3'><img src='" +
+        plans[1].icon +
+        "' alt='HP' /><h2>" +
+        plans[1].title +
+        "</h2><p>" +
+        plans[1].desc +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[1].features[0] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[1].features[1] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[1].features[2] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[1].features[3] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[1].features[4] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[1].features[5] +
+        "<p/><p/><p/></p><p class='small-case'>As low as</p><h3 class='price'>C$" +
+        plans[1].price +
+        "/mo</h3><button type='button'>Add to cart</button></div>" +
+        "<div class='card col-m-6 col-3'><img src='" +
+        plans[2].icon +
+        "' alt='HP' /><h2>" +
+        plans[2].title +
+        "</h2><p>" +
+        plans[2].desc +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[2].features[0] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[2].features[1] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[2].features[2] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[2].features[3] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[2].features[4] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[2].features[5] +
+        "</p><p class='small-case'>As low as</p><h3 class='price'>C$" +
+        plans[2].price +
+        "/mo</h3><button type='button'>Add to cart</button></div>" +
+        "<div class='card col-m-6 col-3'><img src='" +
+        plans[3].icon +
+        "' alt='HP' /><h2>" +
+        plans[3].title +
+        "</h2><p>" +
+        plans[3].desc +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[3].features[0] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[3].features[1] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[3].features[2] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[3].features[3] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[3].features[4] +
+        "</p><p><i class='fas fa-cart-arrow-down'></i>&nbsp&nbsp&nbsp" +
+        plans[3].features[5] +
+        "</p><p class='small-case'>As low as</p><h3 class='price'>C$" +
+        plans[3].price +
+        "/mo</h3><button type='button'>Add to cart</button></div>";
+    </script>
   </head>
   <body>
     <nav style="margin-top: 2.5rem">
@@ -26,7 +113,7 @@
         <a id="sign-in" style="color: #2e93ee" href="/signin">Sign In</a>
       </div>
     </nav>
-    <nav style="justify-content: flex-start; align-items: center">
+    <!-- <nav style="justify-content: flex-start; align-items: center">
       <input type="text" placeholder="Find you perfect domain" />
       <button type="button">Search</button>
       <div class="ca-com-net">
@@ -43,18 +130,18 @@
           <a href="/">C$14.99</a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <main>
       <div stlye="margin: 0px; padding: 0px" class="hero-section">
         <!-- <div stlye="margin: 0px; padding: 0px" class="col-12"> -->
-        <img src="images/jumbotron.PNG" alt="Hero-Section" />
+        <img src="images/wh-jumbotron.PNG" alt="Hero-Section" />
         <!-- </div> -->
       </div>
       <div class="container">
         <div class="row content-section">
-          <div class="card col-m-6 col-3">
-            <img src="images/wh.PNG" alt="WH" />
-            <h3>Web Hosting</h3>
+          <!-- <div class="card col-m-6 col-3">
+            <img src="images/hp.PNG" alt="HP" />
+            <h2>Hatching Plan</h2>
             <p>Get fast and unlimited web hosting for your site</p>
             <button type="button" onclick="location.href='/web-hosting';">
               Get Hosting
@@ -62,8 +149,8 @@
             <p class="hide">SAVE UPTO 50% OFF</p>
           </div>
           <div class="card col-m-6 col-3">
-            <img src="images/cs.PNG" alt="CS" />
-            <h3>VPS Hosting</h3>
+            <img src="images/bp.PNG" alt="BP" />
+            <h2>Baby Plan</h2>
             <p>Full root access in a fully scalable hosting environment</p>
             <button type="button" onclick="location.href='/';">
               Compare Clouds
@@ -71,8 +158,8 @@
             <p class="hide">SAVE UPTO 67% OFF</p>
           </div>
           <div class="card col-m-6 col-3">
-            <img src="images/ds.PNG" alt="DS" />
-            <h3>Dedicated Servers</h3>
+            <img src="images/sp.PNG" alt="SP" />
+            <h2>Savers plan</h2>
             <p>The ultimate in performance. Get total server control</p>
             <button type="button" onclick="location.href='/';">
               View Servers
@@ -80,17 +167,20 @@
             <p class="hide">SAVE UPTO 26% OFF</p>
           </div>
           <div class="card col-m-6 col-3">
-            <img src="images/wp.PNG" alt="WP" />
-            <h3>WordPress</h3>
+            <img src="images/bap.PNG" alt="BAP" />
+            <h2>Business Plan</h2>
             <p>2.5x the speed, beefed up security, and free migrations</p>
             <button type="button" onclick="location.href='/';">
               Get WordPress
             </button>
             <p class="hide">SAVE UPTO 40% OFF</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
+    <!-- <script>
+      console.log(plans);
+    </script> -->
   </body>
   <footer>
     <div class="row">

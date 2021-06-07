@@ -16,4 +16,9 @@ router.get('/signup', (req, res) => {
   res.render('signup.html')
 })
 
+/* GET Web hosting */ 
+router.get('/web-hosting', (req, res) => {
+  res.render('web-hosting.html')
+})
+
 module.exports = router;
