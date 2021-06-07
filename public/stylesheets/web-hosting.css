@@ -60,6 +60,10 @@ nav.scroll-down {
   /* margin: 0 1em; */
 }
 
+.links a:hover {
+  color: #2e93ee;
+}
+
 #sign-in:hover {
   text-decoration: underline;
   z-index: 20;

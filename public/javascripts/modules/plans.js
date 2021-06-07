@@ -14,7 +14,7 @@ let plans = [
     {
         icon: 'images/bp.PNG',
         title: 'Baby Plan',
-        desc: 'Pro performance, premium features, free domain, and more!',
+        desc: 'Pro performance, premium features, free domain etc..',
         price: '2.88',
         features: ['Unlimited websites ',
             'One-click WordPress installs',
@@ -39,7 +39,7 @@ let plans = [
         icon: 'images/bap.PNG',
         title: 'Business Plan',
         price: '10.88',
-        desc: 'Best performance for demanding websites, with SSL & dedicated IP.',
+        desc: 'Best performance for websites, with SSL & dedicated IP.',
         features: ['Single website',
             'One-click WordPress installs ',
             'Free SSL certificate',
