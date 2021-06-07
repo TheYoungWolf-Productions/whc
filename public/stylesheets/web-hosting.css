@@ -13,13 +13,14 @@ body {
 nav {
   position: sticky;
   top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* padding: 0 2rem; */
+  margin-top: 5px;
   /* margin: 0px 4rem 10px 4rem; */
-  transition: top 500ms ease-in-out;
+  /* transition: top 500ms ease-in-out; */
   background-color: white;
 }
 
@@ -32,32 +33,6 @@ nav.scroll-down {
   top: -100%;
 }
 
-nav input {
-  padding: 0.75rem 1rem 0.75rem 1rem;
-  font-size: large;
-  width: 50%;
-  border-radius: 5px 1px 1px 5px;
-  border-right: none;
-}
-
-nav button {
-  padding: 0.75rem 1rem 0.75rem 1rem;
-  font-size: large;
-  width: 110px;
-  border-radius: 1px 5px 5px 1px;
-  background-color: #2e93ee;
-  color: white;
-  border: none;
-}
-nav button:hover {
-  background-color: rgb(88, 128, 214);
-}
-
-.links {
-  display: flex;
-  margin: 0 -1em;
-}
-
 .small-case {
   font-size: small;
   color: rgb(78, 75, 78);
@@ -67,6 +42,13 @@ nav button:hover {
   color: rgb(136, 48, 48);
   font-size: xx-large;
   margin-top: 2px;
+}
+
+.links {
+  /* display: flex; */
+  /* margin: 0 -1em; */
+  text-align: center;
+  margin: 1.5% 0px 0 0;
 }
 
 .links a {
@@ -183,4 +165,18 @@ footer a {
 footer a:hover {
   color: black;
   text-decoration: underline;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .search-section {
+    display: none;
+  }
 }
